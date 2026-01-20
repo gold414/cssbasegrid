@@ -39,7 +39,6 @@ li{
     border: 2px solid gold;
     box-shadow: 0 0 5px gold;
     display: grid;
-    place-items: center;
     padding: 10px 15px;
     border-radius: 15px;
     color: gold;
@@ -96,4 +95,13 @@ span{
 h2:hover{
     color: lightblue;
     cursor: pointer;
+}
+
+@media (max-width: 768px) {
+    .menu-card{
+        grid-template-columns: 1fr; 
+    }
+    ul{
+        grid-template-columns: repeat(5, auto);
+    }
 }
